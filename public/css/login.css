@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414; /* Netflix dark background */
+    color: white; /* White text for contrast */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+    padding-top: 20px; /* Add padding to move the container slightly down */
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8); /* Subtle shadow for depth */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+h2 {
+    color: rgb(210, 0, 0);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    text-align: left;
+    color: #d2d2d2; /* Light gray color for labels */
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #3c3c3c;
+    color: rgb(221, 221, 221);
+    width: 100%; /* Make input and button full width */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+button {
+    background-color: #E50914; /* Netflix red */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f40612; /* Slightly lighter red on hover */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414; /* Latar belakang gelap ala Netflix */
+    color: white; /* Teks berwarna putih untuk kontras */
+    min-height: 100vh; /* Pastikan body mengambil setidaknya tinggi penuh dari viewport */
+    display: flex;
+    flex-direction: column; /* Membuat tata letak kolom */
+}
+
+main {
+    flex: 1; /* Membuat main mengambil sisa ruang */
+    margin-bottom: 20px; /* Menambahkan jarak antara konten dan footer */
+}
+
+footer {
+    background-color: #141414; /* Menyamakan warna latar belakang */
+    text-align: center; /* Teks di tengah */
+    padding: 20px 0; /* Padding atas dan bawah */
+    width: 100%; /* Lebar penuh */
+    color: #757575; /* Teks berwarna abu-abu muda */
+    font-size: 14px; /* Ukuran font */
+    border-top: 1px solid #333; /* Border tipis untuk memisahkan footer dari konten */
+    position: relative; /* Posisi relatif */
+    bottom: 0; /* Tetap di bagian bawah */
+}
+
+
+footer {
+    background-color: #141414; /* Menyamakan warna latar belakang */
+    text-align: center; /* Teks di tengah */
+    padding: 20px 0; /* Padding atas dan bawah */
+    width: 100%; /* Lebar penuh */
+    color: #757575; /* Teks berwarna abu-abu muda */
+    font-size: 14px; /* Ukuran font */
+    border-top: 1px solid #333; /* Border tipis untuk memisahkan footer dari konten */
+    flex-shrink: 0; /* Pastikan footer tidak menyusut */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0; /* Menghilangkan margin default */
+}
+
+header {
+    background-color: #090909; /* Netflix dark background */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #E50914; /* Netflix red */
+    margin: 0;
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #E50914; /* Netflix red on hover */
+}

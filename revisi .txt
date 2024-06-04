@@ -1,0 +1,6 @@
+revisi :
+ - totol like dan dislike ada di bawah gambar nya
+ - buat agar navbar menjadi rapi
+ - pindah rating di bawah judul dan dibei gambar bintang terhighlight
+ - ganti window film di bawah gambar menjadi rating, dan jumlah like nya. hapus sinopsis nya.
+ - 

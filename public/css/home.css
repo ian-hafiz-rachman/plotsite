@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Warna gelap untuk latar belakang */
+    margin: 0;
+    padding: 0;
+    color: #e5e5e5; /* Warna terang untuk teks */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #e50914; /* Warna merah khas Netflix */
+}
+
+.films {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.film {
+    background-color: #333; /* Warna abu-abu gelap untuk latar belakang film */
+    border: 1px solid #444; /* Warna perbatasan abu-abu */
+    border-radius: 8px;
+    width: calc(17.66% - 20px); /* Lebar yang fleksibel untuk menyesuaikan 5 film per baris */
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.film:hover {
+    transform: scale(1.05);
+    background-color: #444; /* Warna abu-abu yang lebih terang saat hover */
+}
+
+.film a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.film-header {
+    margin-bottom: 10px;
+}
+
+.film h3 {
+    font-size: 20px;
+    margin: 2px 0;
+    color: #e5e5e5;
+    text-align: center;
+    overflow-wrap: break-word; /* Tambahkan properti ini */
+}
+
+
+.film-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.film img {
+    width: 100%;
+    max-height: 300px;
+    min-height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.film p {
+    font-size: 14px;
+    color: #b3b3b3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Batas jumlah baris sinopsis yang ditampilkan */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.film-info {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.info-item i, .info-item img {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #e50914; /* Warna merah khas Netflix untuk ikon */
+    cursor: pointer;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #e5e5e5;
+}
+
+@media (max-width: 768px) {
+    .films {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .film {
+        width: 90%;
+    }
+}
+
+
